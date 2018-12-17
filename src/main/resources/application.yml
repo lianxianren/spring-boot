@@ -1,0 +1,20 @@
+server:
+  port: 8988
+  context-path: /spring-boot
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@127.0.0.1:1521:xe
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: hr
+    password: lichen5211314
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+mybatis:
+  mapper-locations: classpath:/com/baizhi/mapper/*Mapper.xml
